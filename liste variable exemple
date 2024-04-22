@@ -1,0 +1,17 @@
+ // Déclaration de la liste de notes
+        ArrayList<Integer> maListe = new ArrayList<>();
+        maListe.add(10);
+        maListe.add(15);
+        maListe.add(14);
+        
+        // Calcul de la somme des notes
+        int somme = 0;
+        for (int note : maListe) {
+            somme += note;
+        }
+        
+        // Calcul de la moyenne
+        double moyenne = (double) somme / maListe.size();
+        
+        // Affichage de la moyenne
+        System.out.println("La moyenne des notes est : " + moyenne);
